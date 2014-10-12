@@ -2,7 +2,7 @@
 
 angular.module('presentApp')
   .controller('ContextListController', function($scope){
-    $scope.context =
+    $scope.contexts =
     [
       {
         "name": "home",

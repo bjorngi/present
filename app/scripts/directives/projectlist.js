@@ -7,10 +7,10 @@ angular.module('presentApp')
         "name": "present"
       },
       {
-        "name": "past"
+        "name": "math"
       },
       {
-        "name": "future"
+        "name": "vacation"
       }
   ]
   })
