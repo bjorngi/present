@@ -1,6 +1,6 @@
 Present
 =======
-TODO application based on the simpe principles of [GTD](http://en.wikipedia.org/wiki/Getting_Things_Done) and @ginatrapani's [todo.txt](https://github.com/ginatrapani/todo.txt-cli) syntax (+project and @context), where it 
+TODO application based on the simpe principles of [GTD](http://en.wikipedia.org/wiki/Getting_Things_Done) and @ginatrapani's [todo.txt](https://github.com/ginatrapani/todo.txt-cli) syntax (+project and @context), where it Present will make it easy to move your todo-list both in and out of the application (there will be additional data on your tasks, but they will be stripped upon export).
 
 The interface is a web-interface written in AngularJS.
 
