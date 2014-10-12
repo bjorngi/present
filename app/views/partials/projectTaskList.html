@@ -1,0 +1,23 @@
+<input type="text" class="form-control" placeholder="Code +present @location">
+  <p></p>
+
+<span>
+  <a class="fa fa-calendar"></a>&nbsp;
+  <a class="fa fa-at"></a>&nbsp;
+  <a class="fa fa-exclamation"></a>&nbsp;
+  <a class="fa fa-user"></a>&nbsp;
+  <a>#</a>
+
+<span class="text-right">Number of tasks: 10</span>
+</span>
+
+<table class="table table-bordered">
+  <tr ng-repeat="task in tasks">
+    <td>{{task.text}}</td>
+    <td class="location-button info"><a href="#"><i class="fa fa-calendar"></i></a></td>
+    <td class="location-button warning"><a href="#"><i class="fa fa-pencil"></i></a></td>
+    <td class="location-button danger"><a href="#"><i class="fa fa-remove"></i></a></td>
+    <td class="location-button success"><a href="#"><i class="fa fa-check"></i></a></td>
+  </tr>
+
+</table>

@@ -1,0 +1,38 @@
+<div class="header">
+
+</div>
+
+<body>
+  <div class="container-liquid">
+
+    <div class="row">
+      <div class="col-md-12">
+
+        <input ng-model="task" ng-enter="makeTask()" ng-hide="working"
+               type="text" class="form-control" placeholder="Code +present @location">
+
+        <div class="loading">
+          <i ng-show="working" class="fa fa-spinner fa-spin"></i>
+        </div>
+
+      </div>
+
+      <div ng-controller="TaskListController" class="col-md-9 list">
+        <div task-list></div>
+      </div>
+
+      <div class="col-md-3">
+        <div ng-controller="ProjectListController" class="list">
+          <div project-list></div>
+        </div>
+
+        <div ng-controller="ContextListController" class="list">
+          <div location-list></div>
+        </div>
+
+      </div>
+
+    </div>
+  <!-- end contaner -->
+
+</body>

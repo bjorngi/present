@@ -1,0 +1,31 @@
+<span>&nbsp;</span>
+<div class="row">
+
+  <div class="col-md-12">
+    <table class="tasklist table table-bordered">
+      <tr>
+        <th></th>
+        <th><a class="fa fa-at"></a></th>
+        <th><a class="fa fa-exclamation"></a></th>
+        <th><a class="fa fa-calendar"></a></th>
+        <th><a class="fa fa-user"></a></th>
+      </tr>
+
+      <tr ng-repeat="task in tasks | filter:search">
+
+        <td>{{task.text}}
+          <span ng-repeat="project in task.projects">+{{project}}</span>
+          <span ng-repeat="context in task.contexts">@{{context}}</span>
+        </td>
+
+        <td class="location-button info"><a href="#"><i class="fa fa-calendar"></i></a></td>
+        <td class="location-button warning"><a href="#"><i class="fa fa-pencil"></i></a></td>
+        <td class="location-button danger"><a href="#"><i class="fa fa-remove"></i></a></td>
+        <td class="location-button success"><a href="#"><i class="fa fa-check"></i></a></td>
+      </tr>
+
+    </table>
+
+  </div>
+
+</div>
