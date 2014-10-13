@@ -5,7 +5,8 @@ angular
     'ngCookies',
     'ngResource',
     'ngSanitize',
-    'ngRoute'
+    'ngRoute',
+    'angularMoment',
   ])
   .config(function ($routeProvider) {
     BaasBox.setEndPoint("http://baasbox.tihlde.org:10000");
