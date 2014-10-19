@@ -1,37 +1,17 @@
-<span>&nbsp;</span>
-<div class="row">
+<div class="row border-row">
+  <div class="input from-control input-lg">
+    <div class="" ng-repeat="task in tasks | filter:search">
+      <div class="col-md-1" ng-click="completeTask(task)" ng-mouseover="over = true" ng-mouseleave="over = false">
+        <i ng-show="!over" class="fa fa-square-o fa-1x"></i>
+        <i ng-show="over" class="fa fa-check-square-o fa-1x"></i>
+      </div>
 
-  <p class="text-center">
-  Showing: {{search}} <i class="fa fa-remove"></i>
-  Sorting on: <i class="fa fa-remove"></i>
-  </p>
+      <div class="col-md-10" ng-bind-html="task.text"></div>
 
-  <div class="col-md-12">
-    <table class="tasklist table table-bordered">
-      <tr>
-        <th>
-          <div class="input-group">
-            <input ng-model="search" type="text" class="form-control" placeholder="Search">
-          </div>
-        </th>
-        <th><a class="fa fa-at"></a></th>
-        <th><a class="fa fa-exclamation"></a></th>
-        <th><a class="fa fa-calendar"></a></th>
-        <th><a class="fa fa-user"></a></th>
-      </tr>
-
-      <tr ng-repeat="task in tasks | filter:search">
-
-        <td ng-bind-html="task.text"></td>
-
-        <td class="location-button info"><i class="fa fa-calendar"></i></td>
-        <td class="location-button warning"><i class="fa fa-pencil"></i></td>
-        <td class="location-button danger"><a href="#"><i class="fa fa-remove"></i></a></td>
-        <td ng-click="completeTask(task)" class="location-button success pointer"><i class="fa fa-check"></i></td>
-      </tr>
-
-    </table>
-
+      <div class="col-md-1">
+        <i class="fa fa-angle-double-left"></i>
+      </div>
+    </div>
   </div>
-
 </div>
+  <hr>

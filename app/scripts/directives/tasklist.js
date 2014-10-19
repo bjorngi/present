@@ -19,6 +19,10 @@ angular.module('presentApp')
         .then(function(res) {
 
         })
+        .catch(function(err) {
+          console.err(err);
+          $scope.task.push(task);
+        })
     };
 
 
